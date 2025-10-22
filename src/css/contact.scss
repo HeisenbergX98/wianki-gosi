@@ -79,6 +79,7 @@
             background-color: $primary-400;
             cursor: pointer;
             transition: background-color 0.2s ease, box-shadow 0.2s ease;
+            color: inherit;
 
             &:hover {
               background-color: #f64b49;
