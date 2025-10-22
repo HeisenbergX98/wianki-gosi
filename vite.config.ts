@@ -1,10 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-const repoName = 'wianki-gosi';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: `/wianki-gosi/`,
   plugins: [react()],
-  base: `/${repoName}/`,
-})
+});
