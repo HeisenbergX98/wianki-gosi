@@ -1,0 +1,143 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-section .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.contact-section .contact-container .contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  flex-direction: column;
+}
+.contact-section .contact-container .contact-box .form-container {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .contact-container .contact-box .form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-section .contact-container .contact-box .form-container form .input-box {
+  position: relative;
+}
+.contact-section .contact-container .contact-box .form-container form .input-box input {
+  width: 25vw;
+  height: 5vh;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffc5c4;
+  color: rgb(47, 46, 46);
+  padding-left: 40px;
+}
+.contact-section .contact-container .contact-box .form-container form .input-box input:focus {
+  outline: 1px solid #ff9c9b;
+}
+.contact-section .contact-container .contact-box .form-container form .input-box i {
+  position: absolute;
+  left: 5%;
+  top: 33%;
+  color: #fff1f1;
+}
+.contact-section .contact-container .contact-box .form-container form textarea {
+  width: 25vw;
+  height: 10vh;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffc5c4;
+  color: rgb(47, 46, 46);
+  padding: 10px 20px;
+  font-family: inherit;
+  font-weight: 600;
+}
+.contact-section .contact-container .contact-box .form-container form textarea:focus {
+  outline: 1px solid #ff9c9b;
+}
+.contact-section .contact-container .contact-box .form-container form button {
+  width: 25vw;
+  height: 5vh;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff6361;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-section .contact-container .contact-box .form-container form button:hover {
+  background-color: #f64b49;
+  box-shadow: 0 0 5px rgb(41, 40, 40);
+}
+.contact-section .contact-container .contact-box .form-container form button:active {
+  box-shadow: inset 0 0 5px rgb(41, 40, 40);
+}
+.contact-section .call-container {
+  display: flex;
+  background-color: #ff6361;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .contact-section .contact-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+  }
+  .contact-section .contact-container .contact-box {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact-section .contact-container .contact-box .form-container {
+    display: flex;
+    width: 100%;
+  }
+  .contact-section .contact-container .contact-box .form-container form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-section .contact-container .contact-box .form-container form .input-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-section .contact-container .contact-box .form-container form .input-box input {
+    width: 90%;
+    height: 6vh;
+  }
+  .contact-section .contact-container .contact-box .form-container form .input-box i {
+    top: 33%;
+    left: 8%;
+  }
+  .contact-section .contact-container .contact-box .form-container form textarea {
+    width: 90%;
+    height: 15vh;
+  }
+  .contact-section .contact-container .contact-box .form-container form button {
+    width: 90%;
+    height: 6vh;
+  }
+}
+
+.map {
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .map {
+    width: 100%;
+    height: 250px;
+  }
+}/*# sourceMappingURL=contact.css.map */

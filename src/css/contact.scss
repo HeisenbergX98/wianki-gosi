@@ -1,0 +1,163 @@
+@use "./variables" as *;
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+
+    .contact-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0;
+      flex-direction: column;
+
+      .form-container {
+        display: flex;
+        flex-direction: column;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .input-box {
+            position: relative;
+
+            input {
+              width: 25vw;
+              height: 5vh;
+              padding: 10px;
+              border: none;
+              border-radius: 20px;
+              background-color: $primary-200;
+              color: rgb(47, 46, 46);
+              padding-left: 40px;
+
+              &:focus {
+                outline: 1px solid $primary-300;
+              }
+            }
+
+            i {
+              position: absolute;
+              left: 5%;
+              top: 33%;
+              color: $primary-50;
+            }
+          }
+
+          textarea {
+            width: 25vw;
+            height: 10vh;
+            border: none;
+            border-radius: 20px;
+            background-color: $primary-200;
+            color: rgb(47, 46, 46);
+            padding: 10px 20px;
+            font-family: inherit;
+            font-weight: 600;
+
+            &:focus {
+              outline: 1px solid $primary-300;
+            }
+          }
+
+          button {
+            width: 25vw;
+            height: 5vh;
+            border: none;
+            border-radius: 30px;
+            background-color: $primary-400;
+            cursor: pointer;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+
+            &:hover {
+              background-color: #f64b49;
+              box-shadow: 0 0 5px rgb(41, 40, 40);
+            }
+            &:active {
+              box-shadow: inset 0 0 5px rgb(41, 40, 40);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .call-container {
+    display: flex;
+    background-color: $primary-400;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 15px;
+
+      .contact-box {
+        margin: 20px 0;
+        width: 100%;
+
+        .form-container {
+          display: flex;
+          width: 100%;
+
+          form {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .input-box {
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              input {
+                width: 90%;
+                height: 6vh;
+              }
+              i {
+                top: 33%;
+                left: 8%;
+              }
+            }
+
+            textarea {
+              width: 90%;
+              height: 15vh;
+            }
+
+            button {
+              width: 90%;
+              height: 6vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.map {
+  border-radius: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 250px;
+  }
+}

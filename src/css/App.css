@@ -1,0 +1,10 @@
+#root {
+  margin: 0;
+  max-width: 100%;
+}
+
+#home,
+#services,
+#contact {
+  scroll-margin-top: 40px;
+}
